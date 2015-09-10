@@ -21,3 +21,36 @@ I don't see where it asks me to define commit, but I'll do it anyways. To be sho
 At first I found GitHub confusing because I did not realize that git was different than GitHub, and I didn't understand how their relationship. Also I was unsure whether to use command-line, browser, or desktop app, and I saw instructions for each. Learning the relationship between git and GitHub was key. Also, now that I understand forking and cloning better, things are starting to make more sense.
 
 I still wonder a bit about how it is used. For instance, if I am working on a project with someone, we'll create a repository on which we can share our work. Then we each fork it to our accounts (maybe optional) and clone it to our systems. Then we create other branches on our system so we can work on it without altering our individual masters. Then we commit the branch to our own  master, and then push this Master to GitHub? It doesn't seem right. I'll find out soon enough I'm sure.
+
+## 1.5 Tracking Changes
+
+How does tracking and adding changes make developers' lives easier?
+  Tracking and adding helps save progress along the way. It also lets you look back to certain changes and recognize what happens at that point.
+
+What is a commit?
+  A commit is a check point, a way to save your work. It is not as final as pushing it to the repository, but it saves the work that has been completed as a snapshot.
+
+What are the best practices for commit messages?
+  Have a header that is Capitalized, concise and <50 char.
+
+  The body should be separated by a blank line. Paragraphs should be wrapped around 72 characters. Write commit messages in imperative.
+  * bullet points are okay too
+  * and lists.
+
+What does the HEAD^ argument mean?
+  HEAD^ refers to the previous commit.
+
+What are the 3 stages of a git change and how do you move a file from one stage to the other?
+  When a change is made, it is an unstaged change.
+  Then you git add the file to stage it. This makes a staged change.
+  When you commit the changes then you have a committed change.
+
+Write a handy cheatsheet of the commands you need to commit your changes?
+  Okay.
+
+What is a pull request and how do you create and merge one?
+  A pull request is a request to add code from a branch to another branch (sometimes master branch). You can create one on GitHub by clicking on pull requests and choosing which branch you want to pull the new code from. You or someone else can agree to this request, accept the pull, and delete the old branch.
+
+Why are pull requests preferred when working with teams?
+  Pull requests are good because it lets other people look at your work and confirm your submission before adding it to a branch of the repo.
+

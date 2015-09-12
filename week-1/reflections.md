@@ -1,7 +1,23 @@
 ## 1.1 Think About Time Reflection
 
-To be added later.
-This is a test
+###Which time management and productivity ideas did you learn about?
+I really enjoyed the article "Seven counterintuitive ways to be insanely productive." The main idea I get from the article is that we need to treat ourselves like humans instead of task completing machines. Two big points I take away from this article are to favor natural ebbs and flows of productivity over robotic schedules, and to not see productivity as the ultimate goal.
+
+###What is "Time Boxing?" How can you use it in Phase 0?
+Timeboxing is a way of organizing productivity by the amount of time worked rather than the amount of work completed. It usually has to do with setting aside blocks of time for both work and relaxation. Time boxing can be as simple as setting a timer and telling yourself you are going to work for that amount of time, regardless of the end product. They key is productivity during this time, not the result.
+
+###How do you manage your time currently?
+I am currently using the pomodoro technique. I think they key aspect of pomodoro is not mixing the work and the play. I am fine with skipping a break if I feel the need, and I am also fine with extending my break. I just don't want to be working when I am counting the time as relaxing, and I don't want to goof off during my work time.
+
+###Is your current strategy working? If not, why not?
+My current strategy is working!
+
+###Can/will you employ any of them? If so, how?
+I used to regularly meditate and I want to get back into it. I am going to take at least one of my pomodoro breaks each day to meditate.I guess this is also applying a the "start small" rule of habit formation. Cool.
+
+###What is your overall plan for Phase 0 time management?
+I will use pomodoro timers, and work alongside my friends when possible. I will continue to loosely record my hours per week, aiming for 25 hours a week or completion of all necessary tasks. Most of the time during my pomodoro breaks, I want to take active breaks to move around and give myself energy, but I am going to take one break to meditate per day. I also am going to make sure that I do not let pomodoro override the natural ebb and flow of my productivity.
+
 
 ## 1.2 The Command Line Reflection
 

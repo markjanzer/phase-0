@@ -1,11 +1,69 @@
 ## 1.1 Think About Time Reflection
 
-To be added later.
-This is a test
+###Which time management and productivity ideas did you learn about?
+I really enjoyed the article "Seven counterintuitive ways to be insanely productive." The main idea I get from the article is that we need to treat ourselves like humans instead of task completing machines. Two big points I take away from this article are to favor natural ebbs and flows of productivity over robotic schedules, and to not see productivity as the ultimate goal.
+
+###What is "Time Boxing?" How can you use it in Phase 0?
+Timeboxing is a way of organizing productivity by the amount of time worked rather than the amount of work completed. It usually has to do with setting aside blocks of time for both work and relaxation. Time boxing can be as simple as setting a timer and telling yourself you are going to work for that amount of time, regardless of the end product. They key is productivity during this time, not the result.
+
+###How do you manage your time currently?
+I am currently using the pomodoro technique. I think they key aspect of pomodoro is not mixing the work and the play. I am fine with skipping a break if I feel the need, and I am also fine with extending my break. I just don't want to be working when I am counting the time as relaxing, and I don't want to goof off during my work time.
+
+###Is your current strategy working? If not, why not?
+My current strategy is working!
+
+###Can/will you employ any of them? If so, how?
+I used to regularly meditate and I want to get back into it. I am going to take at least one of my pomodoro breaks each day to meditate.I guess this is also applying a the "start small" rule of habit formation. Cool.
+
+###What is your overall plan for Phase 0 time management?
+I will use pomodoro timers, and work alongside my friends when possible. I will continue to loosely record my hours per week, aiming for 25 hours a week or completion of all necessary tasks. Most of the time during my pomodoro breaks, I want to take active breaks to move around and give myself energy, but I am going to take one break to meditate per day. I also am going to make sure that I do not let pomodoro override the natural ebb and flow of my productivity.
+
 
 ## 1.2 The Command Line Reflection
 
-To be added later.
+###What is a shell? What is "bash?"
+
+The shell is a program that takes command from a keyboard (through the command line) and interacts with the operating system. It is running Unix to do this. Bash is one of the shell programs you can use.
+
+
+###What was the most challenging for you in going through this material?
+
+I have briefly gone through the Command Line Crash Course before, I still had some difficulty grasping popd, pushd, and mv. I also don't understand everything that happened in the video, but I was also watching it more to understand what the shell could do.
+
+
+###Were you able to successfully use all of the commands?
+
+Not all of the commands in the video, but I was able to use all of the commands from the crash course.
+
+
+###In your opinion, what are the most important commands and arguments to know?
+
+ls, cd, man, touch, rm, rmdir, cat, mv, cp, vi.
+
+
+###Can you remember what each of the following does of the top of your head? Write what each does.
+
+pwd - prints working directory (tells you where you are)
+
+ls - lists the contents of the working directory
+
+mv - either moves a file to a directory, or renames a file.
+
+cd - changes directory. cd directory/to/change/to    cd .. moves down a directory
+
+../ - this refers to the parent directory of the current working directory
+
+touch - creates a file
+
+mkdir - makes a directory
+
+less - reads the text of a file. Not too sure how it is different from more.
+
+rmdir - deletes a directory
+
+rm - delets files
+
+help - gets help, tells you commands, or tells you more about commands. I'm not too sure about differences between this and man.
 
 ## 1.4 Forking and Cloning Reflection
 To create a new repository, first log in to GitHub via internet browser. Look to the upper right corner where there is a plus sign, and click on it. There should be a scroll down menu in which you select "New Repository". Add a name for the repository, and choose whether you want it to be public or private. There are other options that I did not understand. I added a MIT License. Finally, hit "Create Repository."

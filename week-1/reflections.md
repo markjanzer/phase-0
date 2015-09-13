@@ -21,7 +21,49 @@ I will use pomodoro timers, and work alongside my friends when possible. I will 
 
 ## 1.2 The Command Line Reflection
 
-To be added later.
+###What is a shell? What is "bash?"
+
+The shell is a program that takes command from a keyboard (through the command line) and interacts with the operating system. It is running Unix to do this. Bash is one of the shell programs you can use.
+
+
+###What was the most challenging for you in going through this material?
+
+I have briefly gone through the Command Line Crash Course before, I still had some difficulty grasping popd, pushd, and mv. I also don't understand everything that happened in the video, but I was also watching it more to understand what the shell could do.
+
+
+###Were you able to successfully use all of the commands?
+
+Not all of the commands in the video, but I was able to use all of the commands from the crash course.
+
+
+###In your opinion, what are the most important commands and arguments to know?
+
+ls, cd, man, touch, rm, rmdir, cat, mv, cp, vi.
+
+
+###Can you remember what each of the following does of the top of your head? Write what each does.
+
+pwd - prints working directory (tells you where you are)
+
+ls - lists the contents of the working directory
+
+mv - either moves a file to a directory, or renames a file.
+
+cd - changes directory. cd directory/to/change/to    cd .. moves down a directory
+
+../ - this refers to the parent directory of the current working directory
+
+touch - creates a file
+
+mkdir - makes a directory
+
+less - reads the text of a file. Not too sure how it is different from more.
+
+rmdir - deletes a directory
+
+rm - delets files
+
+help - gets help, tells you commands, or tells you more about commands. I'm not too sure about differences between this and man.
 
 ## 1.4 Forking and Cloning Reflection
 To create a new repository, first log in to GitHub via internet browser. Look to the upper right corner where there is a plus sign, and click on it. There should be a scroll down menu in which you select "New Repository". Add a name for the repository, and choose whether you want it to be public or private. There are other options that I did not understand. I added a MIT License. Finally, hit "Create Repository."

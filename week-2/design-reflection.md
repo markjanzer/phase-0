@@ -1,4 +1,4 @@
-![Site-Map #1](/imgs/site-map.jpg)
+![Site-Map #1](imgs/site-map.jpg)
 
 *What are the 6 Phases of Web Design?*
 1.Info Gathering
@@ -40,4 +40,4 @@ User experience design is important because it is design that is focused on your
 
 I didn't find any part of this challenge tedious, just a little intimidating. I like the idea of creating my own website, but my own ambitions scare me. It looks like a lot of work.
 
-Perhaps I'll find trying to get the image to show intimidating. I'll find out when I post to GitHub if it works or not.
+Just kidding! I found adding the image tedious. Having trouble getting it to work, and the only way I can seem to check is by continuously uploading to GitHub.

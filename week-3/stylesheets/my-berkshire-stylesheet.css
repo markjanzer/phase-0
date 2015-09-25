@@ -1,0 +1,99 @@
+/* {
+    border: 1px solid red;
+} */
+
+.big {
+    font-size: 2em;
+}
+
+.break {
+    display: block;
+    text-align: center;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background: gray
+}
+
+li {
+    margin: 2em;
+}
+
+header {
+    font-weight: bold;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+li p {
+    margin: 0px;
+    font-size: .25em;
+}
+* {
+    color: #000080;
+}
+
+a:link {
+    color: #800080;
+}
+
+a:visited {
+    color: #ff0000;
+}
+html {
+    background-color: #ffffff;
+}
+
+.left {
+
+    float: left;
+     width: 45%;
+}
+
+
+.right {
+    float: right;
+   /* display: inline-block; */
+   /* margin-left: 50%; */
+    width: 45%;
+
+
+}
+
+.bottom {
+    font-size: .75em;
+    position: relative;
+    bottom: 0px;
+    clear: both;
+}
+
+.regular {
+    font-size: 1em;
+}
+
+/*
+What is important to know when linking an external file (like a stylesheet) to an HTML file?
+
+You have to know the path to the external file, what the relation (rel) is, and the link's type. Put it in the header, and make sure both files have been saved.
+
+What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+
+It was quite difficult to position things the way we wanted them. That is what took the most time and was the most difficult for us. Float left and right combined with setting the width helped us make the two separate columns. Then the clear:both is what helped us get the footer text below the rest (rather than crammed in between).
+
+What CSS did you use to modify the element style (like size, color, etc.)
+
+Color, font-size, font-weight, and background-color.
+
+Did you modify the HTML to include classes or ids? If so, which did you chose and why? If you didn't, how would you know which one to add to your HTML?
+
+Yes, we created quite a few classes but no ids. We chose classes because they are flexible and reusable, and it keeps us from having to write either CSS that is too broad (ex. body { ...}) or inline CSS on the HTML doc.
+
+When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+
+Although I do not think that our CSS is perfect, I do think that we had cleaner code than the Berkshire site. The CSS written inline on the HTML document is bad practice. Also, on the actual site, there are multiple unordered lists each containing two list items. The two list items are for each half of the page. This does not reflect the flow of the website well, and it seems kind of forced.
+
+*/

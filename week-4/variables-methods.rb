@@ -18,6 +18,10 @@ How do you define a local variable?
 
 You define a local variable by stating its name (make sure it does not start with a capitalized letter), and then setting it equal to a value using a "=."
 
+# Links to other Challenges
+# https://github.com/markjanzer/phase-0/blob/master/week-4/math/my_solution.rb
+# https://github.com/markjanzer/phase-0/blob/master/week-4/address/my_solution.rb
+
 
 # How do you define a method?
 

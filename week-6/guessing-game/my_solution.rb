@@ -1,8 +1,8 @@
 # Build a simple guessing game
 
 
-# I worked on this challenge [by myself, with: ].
-# I spent [#] hours on this challenge.
+# I worked on this challenge by myself
+# I spent 1.5 hours on this challenge.
 
 # Pseudocode
 
@@ -73,3 +73,14 @@ end
 
 
 # Reflection
+# How do instance variables and methods represent the characteristics and behaviors (actions) of a real-world object?
+# I am not sure. I guess that changing a real-world object does not change every other object, and the same can be said about instance variables and methods because they are out of the scope of other methods, instances, and classes.
+
+# When should you use instance variables? What do they do for you?
+# You should use instance variables whenever you need to alter a variable that will be different than any other instance. They act as normal variables but they are not altered by other instances of the same class.
+
+# Explain how to use flow control. Did you have any trouble using it in this challenge? If so, what did you struggle with?
+# You pay attention to the pathing, how the computer will read the code. Loops and if statements can change (or "control") the flow. I had a slight struggle when refactoring. I was trying to consider where I could place @solved = false (seeing as that was the case most of the time). I ended up placing it whenever you define guess, and having it revert back to true whenever correct is returned.
+
+# Why do you think this code requires you to return symbols? What are the benefits of using symbols?
+# I am still not sure why it requires symbols. I know that symbols are more permanent and cannot be altered. I still think it would work with strings. I will continue to look into this, and re-read 8.2 in the Well Grounded-Rubyist.

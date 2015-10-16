@@ -1,19 +1,7 @@
 # Class Warfare, Validate a Credit Card Number
 
-# In this challenge you will determine whether a credit card number is valid or not. (This challenge will be based on the Luhn algorithm (Links to an external site.), no need to look at this unless you're really interested) The algorithm you are being asked to use is below.
-
-# For this challenge, you will need to break down the algorithm into the following steps. You will probably want to break these down into individual methods that are called when you run the #check_card method.
-
-# Starting with the second to last digit, double every other digit until you reach the first digit.
-
-# Sum all the untouched digits and the doubled digits (doubled digits need to be broken apart, 10 becomes 1 + 0).
-
-# If the total is a multiple of ten, you have received a valid credit card number!
-
-# Your class will need to return true or false when you call the #check_card method. Your class needs to be initialized with a credit card number that is exactly 16 digits -- otherwise you should receive an ArgumentError.
-
-# I worked on this challenge [by myself, with: ].
-# I spent [#] hours on this challenge.
+# I worked on this challenge with Peter Wiebe
+# I spent 1.5 hours on this challenge.
 
 # Pseudocode
 

@@ -7,7 +7,7 @@
 // Goals:
 // Characters: Hero, Shade
 // Objects: Gold
-// Functions: hero.left, hero.right, hero.forward. hero.back, hero.cheat
+// Functions: hero.move(left), hero.move(right), hero.move(forward). hero.move(back), hero.cheat()
 
 // --------------- PsuedoCode ----------------
 // createa a gold object.
@@ -29,9 +29,120 @@
 // End
 
 // Initial Code
+
+
+// var gold = {
+//   coords: [Math.floor(Math.random() * 8 + 1), 7 + Math.floor(Math.random())];
+// }
+
+// var shade = {
+//   coords: [4,4],
+//   move: function(){
+//     var moveOptions = [[shade.coords[0], shade.coords[1]+1], [shade.coords[0], shade.coords[1]-1], [shade.coords[0]+1, shade.coords[1]], [shade.coords[0]-1, shade.coords[1]]];
+//     moveOptions = moveOptions.filter(availableSpaceNoGold);
+//     shade.coords = moveOptions[Math.floor(Math.random() * moveOptions.length)];
+//   }
+// }
+// var hero = {
+//   coords: [3,1],
+//   forward: function(){
+//     var newSpace = [hero.coords[0], hero.coords[1]+1];
+//     newSpace = newSpace.filter(availableSpace);
+//     if (newSpace.length === 2) {
+//       hero.coords = newSpace;
+//     } else {
+//       console.log("There seems to be a wall there.");
+//     }
+//     postMove();
+//   },
+//   back: function(){
+//     var newSpace = [hero.coords[0], hero.coords[1]-1];
+//     newSpace = newSpace.filter(availableSpace);
+//     if (newSpace.length === 2) {
+//       hero.coords = newSpace;
+//     } else {
+//       console.log("There seems to be a wall there.");
+//     }
+//     postMove();
+//   },
+//   left: function(){
+//     var newSpace = [hero.coords[0]-1, hero.coords[1]];
+//     newSpace = newSpace.filter(availableSpace);
+//     if (newSpace.length === 2) {
+//       hero.coords = newSpace;
+//     } else {
+//       console.log("There seems to be a wall there.");
+//     }
+//     postMove();
+//   },
+//   right: function(){
+//     var newSpace = [hero.coords[0]+1, hero.coords[1]];
+//     newSpace = newSpace.filter(availableSpace);
+//     if (newSpace.length === 2) {
+//       hero.coords = newSpace;
+//     } else {
+//       console.log("There seems to be a wall there.");
+//     }
+//     postMove();
+//   },
+//   cheat: function(){
+//     hero.coords = gold.coords;
+//     postMove();
+//   }
+
+// }
+
+
+// function postMove(){
+//   var gameOver = false;
+//   shade.move();
+//   if (findDistance(hero.coords, gold.coords) === 0) {
+//     console.log("Congratulations! You Won!");
+//     gameOver = true;
+//   } else if (findDistance(hero.coords, shade.coords) === 0) {
+//     console.log("You were swallowed up in darkness, try again!");
+//     gameOver = true;
+//   }
+//   if (!gameOver) {
+//     console.log("You are " + findDistance(hero.coords, shade.coords) + " from the shadow. You are " + findDistance(hero.coords, gold.coords) +  " from the gold.");
+//   }
+// }
+
+// function availableSpaceNoGold (coords){
+//   if (findDistance(gold.coords, coords) === 0) {
+//     return false;
+//   }
+//   for (var i = 0; i < coords.length; i++)  {
+//     if ((coords[i] < 1) || (coords[i] > 8)) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
+
+// function availableSpace (coord){
+//   return (coord <= 8) && (coord >= 1);
+// }
+
+// function findDistance(coord1, coord2){
+//   return (Math.abs(coord1[0]-coord2[0]) + Math.abs(coord1[1]-coord2[1]))
+// }
+
+// Sample Commands
+// hero.left();
+// hero.left();
+// hero.forward();
+// hero.forward();
+// hero.right();
+// hero.right();
+// hero.back();
+// hero.cheat();
+
+// Refactored Code
+
 // Place gold far away from hero spawn location (in the 7th or 8th row).
 var gold = {
-  coords: [Math.floor(Math.random() * 8 + 1), 7 + Math.floor(Math.random())];
+  coords: [Math.floor(Math.random() * 8 + 1), 7 + Math.floor(Math.random())]
 }
 
 // Spawn shade at (4,4). Allow shade to move in random direction. moveOptions is an array with all possibilities of movement and coordinates are filtered out if they are the same as the gold coordinates or if they are beyond the scope of the map (ex. (1,9)).
@@ -44,42 +155,13 @@ var shade = {
   }
 }
 
+
 // Spawn hero at (3,1). Allow the hero to move left, right, forward, or back. If the space is not available, a turn is taken and the player is informed. After every turn, the hero gets information on his distance from the shade and the gold. This happens in postMove(), which also checks if the hero won or lost.
+
 var hero = {
   coords: [3,1],
-  forward: function(){
-    var newSpace = [hero.coords[0], hero.coords[1]+1];
-    newSpace = newSpace.filter(availableSpace);
-    if (newSpace.length === 2) {
-      hero.coords = newSpace;
-    } else {
-      console.log("There seems to be a wall there.");
-    }
-    postMove();
-  },
-  back: function(){
-    var newSpace = [hero.coords[0], hero.coords[1]-1];
-    newSpace = newSpace.filter(availableSpace);
-    if (newSpace.length === 2) {
-      hero.coords = newSpace;
-    } else {
-      console.log("There seems to be a wall there.");
-    }
-    postMove();
-  },
-  left: function(){
-    var newSpace = [hero.coords[0]-1, hero.coords[1]];
-    newSpace = newSpace.filter(availableSpace);
-    if (newSpace.length === 2) {
-      hero.coords = newSpace;
-    } else {
-      console.log("There seems to be a wall there.");
-    }
-    postMove();
-  },
-  right: function(){
-    var newSpace = [hero.coords[0]+1, hero.coords[1]];
-    newSpace = newSpace.filter(availableSpace);
+  move: function(direction) {
+    var newSpace = direction;
     if (newSpace.length === 2) {
       hero.coords = newSpace;
     } else {
@@ -91,9 +173,13 @@ var hero = {
     hero.coords = gold.coords;
     postMove();
   }
-
 }
 
+// Variables help me make movement DRY.
+var forward = [hero.coords[0], hero.coords[1]+1];
+var back = [hero.coords[0], hero.coords[1]-1];
+var left = [hero.coords[0]-1, hero.coords[1]];
+var right = [hero.coords[0]+1, hero.coords[1]];
 
 function postMove(){
   var gameOver = false;
@@ -131,21 +217,20 @@ function findDistance(coord1, coord2){
 }
 
 // Sample Commands
-hero.left();
-hero.left();
-hero.forward();
-hero.forward();
-hero.right();
-hero.right();
-hero.back();
+hero.move(left);
+hero.move(left);
+hero.move(right);
+hero.move(right);
+hero.move(forward);
+hero.move(forward);
+hero.move(back);
+hero.move(back);
 hero.cheat();
-
-// Refactored Code
 
 
 // Reflection
 // What was the most difficult part of this challenge?
-// This challenge was fun but difficult! I had a tough time scaling my project down to an MVP, but I am very glad that I did so. I also was not sure about how I should organize the game. Should I have created an Object for the new game? I don't think it was necessary so I didn't do it. Otherwise, I am not used to JavaScript bug solving (so it took me longer to resolve issues). I set some functions working on the wrong objects and I was confused about when to return things.
+// This challenge was fun but difficult! I had a tough time scaling my project down to an MVP, but I am very glad that I did so. I also was not sure about how I should organize the game. Should I have created an Object for the new game? I don't think it was necessary so I didn't do it. Otherwise, I am not used to JavaScript bug solving (so it took me longer to resolve issues). I set some functions working on the wrong objects and I was confused about when to return things. I also didn't leave myself enough time to do as much refactoring as I would like.
 
 // What did you learn about creating objects and functions that interact with one another?
 // I found the interaction of objects to be relatively simple in my game. I wanted to use constructors, but I wasn't sure if it was necessary. I got some more practice with callback functions when I was using the filter function.

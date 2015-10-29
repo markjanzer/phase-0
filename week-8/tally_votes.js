@@ -1,7 +1,7 @@
 // Tally Votes in JavaScript Pairing Challenge.
 
 // I worked on this challenge with:
-// This challenge took me [#] hours.
+// This challenge took me 1.5 hours.
 
 // These are the votes cast by each student. Do not alter these objects here.
 var votes = {
@@ -63,21 +63,85 @@ var officers = {
 }
 
 // Pseudocode
+//
+// Block to input votes
+// Input: no arguments taken, needs votes object
+// Output: VoteCount with each officer number of votes correlated to them in the correct office.
 
+// Create a for loop to iterate through votes object
+//   Create a for loop to iterate through the individual vote.
+//     IF voteCount[current office][current candidate] exists
+//       then voteCount[current office][current candidate] += 1
+//     ELSE
+//       voteCount[current office][current candidate] = 1
+//     END
+//   END
+// END
+
+// Block to count votes for each office and return the max (aka the winner);
+// Input: needs voteCount
+// Output: Winner
+
+// Create a for loop to iterate through voteCount object
+//   Create a for loop to iterate through each office object
+//     Find max for voteCount[office][candidate], set candidate as property to officers[office]
+//   END
+// END
 
 // __________________________________________
 // Initial Solution
 
+// for (var voter in votes) {
+//   for (var office in votes[voter]) {
+//     if (votes[voter][office] in voteCount[office]) {
+//       voteCount[office][votes[voter][office]] += 1;
+//     } else {
+//       voteCount[office][votes[voter][office]] = 1;
+//     }
+//   }
+// }
 
 
-
-
+// for (var position in voteCount) {
+//   var max = 0;
+//   var topRunner = "";
+//   for (var candidate in voteCount[position]) {
+//     if (voteCount[position][candidate] > max) {
+//       max = voteCount[position][candidate];
+//       topRunner = candidate;
+//     }
+//   }
+//   officers[position] = topRunner;
+// }
 
 
 // __________________________________________
 // Refactored Solution
 
+for (var voter in votes) {
+  for (var office in votes[voter]) {
+    var candidateChoice = votes[voter][office];
+    if (candidateChoice in voteCount[office]) {
+      voteCount[office][candidateChoice] += 1;
+    } else {
+      voteCount[office][candidateChoice] = 1;
+    }
+  }
+}
 
+
+for (var position in voteCount) {
+  var max = 0;
+  var topRunner = "";
+  for (var candidate in voteCount[position]) {
+    var numberOfVotes = voteCount[position][candidate];
+    if (numberOfVotes > max) {
+      max = numberOfVotes;
+      topRunner = candidate;
+    }
+  }
+  officers[position] = topRunner;
+}
 
 
 
@@ -85,9 +149,14 @@ var officers = {
 // __________________________________________
 // Reflection
 
+// What did you learn about iterating over nested objects in JavaScript?
+// I learned how to do to do the for (var key in object). Also, we realized how important it is to accurately name your key variable.
 
+// Were you able to find useful methods to help you with this?
+// No we were not! I was looking for some way to set the default value of a property = to 0, but we had no luck. We also looked for a way to find the maximum value of an object and return the key, but we didn't find any way that was more concise and descriptive than our max counter. I mean, we found a shorter way, but it wasn't necessarily much prettier.
 
-
+// What concepts were solidified in the process of working through this challenge?
+// This challenge solidified my ideas of how to call various values or keys when looping through objects. I learned that it is super important to have good names for your keys, and you need to keep track of the order of the loops that you are doing so you can call them later (ex. candidateChoice = votes[voter][office];).
 
 
 // __________________________________________

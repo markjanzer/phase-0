@@ -1,8 +1,8 @@
-![Customer-partner one-to-one relationship schema](../imgs/customer-schema.png)
+![Customer-partner one-to-one relationship schema](imgs/customer-schema.png)
 
 In a world with only monogamous relationships, I think that this example works pretty well. Let's say that there is a company that buys clothes for the users. I guess it would more information than height (and might not care about hair color), but other info can be added later. There is one main customer who is paying, but this company allows one person a discount for their spouse if they pay on the same account. Then there is a one to one relationship between the customer and the partner. The customer might not have a partner, but if the customer does, then there will only be one partner.
 
-![Grocery list and items schema, many to many relationship example](../imgs/grocery_list_schema.png)
+![Grocery list and items schema, many to many relationship example](imgs/grocery_list_schema.png)
 
 **Reflection**
 **What is a one-to-one database?**

@@ -41,35 +41,3 @@ end
 
 # What are you going to study to get more prepared for Phase 1?
 # Inheritance and Testing! Maybe composition too, I'm not sure what that is. I think I also want to do a bit more work on CSS positioning and SQL many-to-many databases.
-
-
-# Introduction to Inheritance
-
-# I worked on this challenge by myself
-
-
-# Pseudocode
-
-
-
-
-# Initial Solution
-
-class GlobalCohort
-  #your code here
-
-end
-
-class LocalCohort
-  #your code here
-
-end
-
-
-# Refactored Solution
-
-
-
-
-
-# Reflection

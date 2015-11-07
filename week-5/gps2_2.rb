@@ -63,9 +63,6 @@ def change_quan(list, item, quan)
 end
 
 
-
-
-
 #    Output the list
 # DEF method that takes no arguments
 def print_list(list)

@@ -179,3 +179,11 @@ myCar.drive_history
 
 
 # 5. Reflection
+# What concepts did you review in this challenge?
+# This challenge reviewed creation of classes.
+
+# What is still confusing to you about Ruby?
+# Symbols are still a little confusing. I need to see more examples of situations in which symbols work best, and I need to see why.
+
+# What are you going to study to get more prepared for Phase 1?
+# I'm going to study a framework for CSS and HTML. Like Boostrap, but I might do Foundation instead.

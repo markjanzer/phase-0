@@ -1,9 +1,4 @@
-// Create a new list
-// Add an item with a quantity to the list
-// Remove an item from the list
-// Update quantities for items in your list
-// Print the list (Consider how to make it look nice!)
-
+// PseudoCode
 // Use a constructor function to construct GroceryList objects.
 //   DEFINE property list that is an object.
 
@@ -58,6 +53,7 @@ function GroceryList() {
     this.list[item] = quantity;
   }
   this.remove = function(item, removeQuantity) {
+    console.log("This is removeQuantity" + removeQuantity)
     if (removeQuantity) {
       this.list[item] -= removeQuantity;
     }
@@ -88,7 +84,12 @@ novGroc.print();
 
 // REFLECT
 // What concepts did you solidify in working on this challenge? (reviewing the passing of information, objects, constructors, etc.)
+// This solidified my understanding of constructor functions. I have not had that much practice working with constructor functions in JavaScript, so this was much needed practice.
+
 // What was the most difficult part of this challenge?
+// The most difficult part was learning how to make optional arguments. Its interesting that in JavaScript, an argument will get the value of undefined if it doesn't exist, but the program still runs. In some ways it is nice because it is flexible, but generally I would also like to know if I am putting the right amount of arguments.
+
 // Did an array or object make more sense to use and why?
+// Class that contains an object made the most sense to me. The object is great for the grocery list because I can use food names as the property names and the quantity as the value, and it does not matter what order they are in. I like using a class because it lets me create and manage multiple grocery lists.
 
 

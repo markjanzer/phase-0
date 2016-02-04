@@ -8,28 +8,29 @@
 
 # Initial Solution
 
-# def is_fibonacci?(num)
-#   fib_num = 1
-#   prev_num = 1
-#   while (num > fib_num)
-#     fib_num += prev_num
-#     prev_num = fib_num - prev_num
-#   end
-#   return fib_num == num
-# end
+def is_fibonacci?(num)
+  fib_num = 1
+  prev_num = 1
+  while (num > fib_num)
+    fib_num += prev_num
+    prev_num = fib_num - prev_num
+  end
+  return fib_num == num
+end
 
 
 # Refactored Solution
 
-def is_fibonacci?(num)
-  fib_num = 2
-  inc = 1
-  while (num > fib_num)
-    fib_num += inc
-    inc += 1
-  end
-  fib_num == num || num == 1
-end
+# def is_fibonacci?(num)
+#   fib_num = 2
+#   inc = 1
+#   while (num > fib_num)
+#     fib_num += inc
+#     puts fib_num
+#     inc += 1
+#   end
+#   fib_num == num || num == 1
+# end
 
 # Reflection
 
